@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f4f8;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+  color: #1a568c;
+  margin-bottom: 20px;
+}
+
+.campo {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-grupo {
+  display: flex;
+  gap: 15px;
+}
+
+.campo-grupo .campo {
+  flex: 1;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.mensagem {
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.mensagem.sucesso {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.mensagem.erro {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.hidden {
+  display: none;
+}

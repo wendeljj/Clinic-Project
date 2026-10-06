@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Consultas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Agendar Consulta</h2>
+    <form id="formConsulta">
+      <div class="input-group">
+        <label for="especialidade">Especialidade:</label>
+        <select id="especialidade" required>
+          <option value="">Selecione...</option>
+          <option value="Cardiologia">Cardiologia</option>
+          <option value="Clínico Geral">Clínico Geral</option>
+          <option value="Pediatria">Pediatria</option>
+          <option value="Dermatologia">Dermatologia</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="medico">Médico:</label>
+        <select id="medico" required>
+          <option value="">Selecione...</option>
+          <option value="Dr. Carlos Silva">Dr. Carlos Silva</option>
+          <option value="Dra. Ana Souza">Dra. Ana Souza</option>
+          <option value="Dr. Roberto Lima">Dr. Roberto Lima</option>
+          <option value="Dra. Mariana Costa">Dra. Mariana Costa</option>
+        </select>
+      </div>
+
+       <div class="input-group">
+        <label for="dataConsulta">Data:</label>
+        <input type="date" id="dataConsulta" required>
+      </div>
+
+      <div class="input-group">
+        <label for="horario">Horário:</label>
+        <input type="time" id="horario" required>
+      </div>
+
+      <button type="submit" class="btn">Agendar Consulta</button>
+    </form>
+
+     <hr style="margin: 30px 0;">
+
+    <h2>Minhas Consultas Agendadas</h2>
+    <table id="tabelaConsultas" border="1" style="width: 100%; text-align: left; border-collapse: collapse;">
+      <thead>
+        <tr>
+          <th>Especialidade</th>
+          <th>Médico</th>
+          <th>Data</th>
+          <th>Horário</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody> 
+    <!-- As consultas vão aparecer aqui via app.js -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
